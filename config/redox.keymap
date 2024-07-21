@@ -253,7 +253,7 @@
 
         to_flash {
             if-layers = <1 2>;
-            then-layer = <4>;
+            then-layer = <5>;
         };
     };
 };
