@@ -217,7 +217,7 @@
 &dongle_bootload_macro  &trans        &trans        &trans            &trans          &trans                                             &trans                        &trans          &trans          &trans           &trans  &trans
 &trans                  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP    &to 0                   &to 0   &kp C_BRIGHTNESS_INC          &trans          &kp UP_ARROW    &trans           &trans  &trans
 &trans                  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &to 1                   &to 2   &kp C_BRIGHTNESS_DEC          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans                  &trans        &out OUT_TOG  &kp END           &kp PAGE_DOWN   &kp K_MUTE         &trans  &trans  &trans  &trans  &trans                        &trans          &trans          &trans           &trans  &trans
+&trans                  &trans        &out OUT_TOG  &kp END           &kp PAGE_DOWN   &kp K_MUTE         &trans  &trans  &trans  &trans  &mima                         &trans          &trans          &trans           &trans  &trans
 &trans                  &trans        &trans        &trans                            &trans             &trans  &trans  &trans  &trans                        &trans                  &trans          &trans           &trans  &trans
             >;
         };
