@@ -225,7 +225,7 @@
             label = "Num";
         };
 
-        NAVI_MACROS {
+        NAVI {
             label = "Navi";
             bindings = <
 &trans  &trans        &trans        &trans            &trans          &trans                                             &trans                        &trans          &trans          &trans           &trans  &trans
