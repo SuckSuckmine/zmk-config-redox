@@ -238,7 +238,7 @@
         compatible = "zmk,conditional-layers";
 
         to_flash {
-            if-layers = <1 1>;
+            if-layers = <1 2>;
             then-layer = <4>;
         };
     };
