@@ -162,7 +162,7 @@
 &kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T            &to 1                                                            &to 3                          &kp Y                    &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
 &kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G            &to 2                                                            &to 4                          &kp H                    &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
 &mt LEFT_SHIFT ENTER  &kp Z           &kp X           &kp C               &kp V             &kp B            &as LEFT_BRACE LEFT_BRACKET  &as PIPE BACKSLASH  &as PLUS EQUAL  &as RIGHT_BRACE RIGHT_BRACKET  &kp N                    &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
-&kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL                      &lt 0 BACKSPACE  &ltq 1 TAB                   &ltq 0 SPACE        &ltq 0 SPACE    &ltq 1 ENTER                           &lt 2 BACKSPACE                     &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
+&kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL                      &lt 1 BACKSPACE  &ltq 3 TAB                   &ltq 4 SPACE        &ltq 4 SPACE    &ltq 2 ENTER                           &lt 1 BACKSPACE                     &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
             >;
 
             label = "Qwery";
