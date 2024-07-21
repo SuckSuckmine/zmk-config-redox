@@ -159,8 +159,8 @@
 
             bindings = <
 &as TILDE GRAVE       &kp N1          &kp N2          &kp N3              &kp N4            &kp N5                                                                                                           &kp N6                   &kp N7             &kp N8               &kp N9                   &kp N0               &kp BSPC
-&kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T            &to 1                                                            &to 2                          &kp Y                    &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
-&kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G            &to 3                                                            &to 4                          &kp H                    &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
+&kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T            &to 1                                                            &to 3                          &kp Y                    &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
+&kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G            &to 2                                                            &to 4                          &kp H                    &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
 &mt LEFT_SHIFT ENTER  &kp Z           &kp X           &kp C               &kp V             &kp B            &as LEFT_BRACE LEFT_BRACKET  &as PIPE BACKSLASH  &as PLUS EQUAL  &as RIGHT_BRACE RIGHT_BRACKET  &kp N                    &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
 &kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL                      &lt 0 BACKSPACE  &ltq 1 TAB                   &ltq 0 SPACE        &ltq 0 SPACE    &ltq 1 ENTER                           &lt 2 BACKSPACE                     &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
             >;
@@ -178,8 +178,8 @@
 
             bindings = <
 &kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6                                     &kp F7                     &kp F8           &kp F9      &kp F10       &kp F11  &kp F12
-&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &to 0                   &to 2   &kp N6                     &kp N7           &kp N8      &kp NUMBER_9  &kp N0   &out OUT_TOG
-&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &to 3                   &to 4   &kp RIGHT_BRACKET          &kp RIGHT_SHIFT  &kp K_FIND  &trans        &trans   &trans
+&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &to 0                   &to 3   &kp N6                     &kp N7           &kp N8      &kp NUMBER_9  &kp N0   &out OUT_TOG
+&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &to 2                   &to 4   &kp RIGHT_BRACKET          &kp RIGHT_SHIFT  &kp K_FIND  &trans        &trans   &trans
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans  &trans  &trans  &trans  &kp RIGHT_BRACE            &kp F13          &kp F14     &kp F15       &kp F16  &trans
 &trans  &trans     &trans     &trans                &trans     &trans  &trans  &trans  &trans                     &trans                   &trans      &trans        &trans   &trans
             >;
@@ -190,8 +190,8 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans          &trans          &trans           &trans                                           &trans          &trans            &trans          &trans        &trans  &trans
-&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans     &to 0                         &to 0   &trans          &trans            &trans          &trans        &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &to 1                         &to 0   &trans          &kp LS(LEFT_ALT)  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &trans
+&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans     &to 1                         &to 3   &trans          &trans            &trans          &trans        &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &to 0                         &to 4   &trans          &kp LS(LEFT_ALT)  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &trans
 &trans  &trans  &trans          &trans          &trans           &trans     &trans     &trans     &trans  &trans  &trans          &trans            &trans          &trans        &trans  &trans
 &trans  &trans  &trans          &trans                           &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans          &trans                    &trans          &trans        &trans  &trans
             >;
@@ -203,7 +203,7 @@
             bindings = <
 &trans  &trans     &trans         &trans     &trans  &trans                                  &trans                &trans        &trans        &trans                &trans  &trans
 &trans  &kp N1     &kp N2         &kp N3     &kp N4  &kp N5  &to 1                   &to 0   &kp N7                &kp N8        &kp N9        &trans                &trans  &trans
-&trans  &kp N6     &kp N7         &kp N8     &kp N9  &kp N0  &to 2                   &to 0   &kp NUMBER_4          &kp N5        &kp NUMBER_6  &trans                &trans  &trans
+&trans  &kp N6     &kp N7         &kp N8     &kp N9  &kp N0  &to 2                   &to 4   &kp NUMBER_4          &kp N5        &kp NUMBER_6  &trans                &trans  &trans
 &trans  &kp LS(X)  &kp LC(LS(O))  &kp LA(I)  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_1          &kp NUMBER_2  &kp NUMBER_3  &as MINUS UNDERSCORE  &trans  &trans
 &trans  &trans     &trans         &trans             &trans  &trans  &trans  &trans  &trans                &trans                &kp N0        &as PLUS EQUAL        &trans  &trans
             >;
@@ -215,8 +215,8 @@
             label = "Navi";
             bindings = <
 &dongle_bootload_macro  &trans        &trans        &trans            &trans          &trans                                             &trans                        &trans          &trans          &trans           &trans  &trans
-&trans                  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP    &to 0                   &to 0   &kp C_BRIGHTNESS_INC          &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans                  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &to 1                   &to 2   &kp C_BRIGHTNESS_DEC          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans                  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP    &to 1                   &to 3   &kp C_BRIGHTNESS_INC          &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans                  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &to 2                   &to 0   &kp C_BRIGHTNESS_DEC          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans                  &trans        &out OUT_TOG  &kp END           &kp PAGE_DOWN   &kp K_MUTE         &trans  &trans  &trans  &trans  &mima                         &trans          &trans          &trans           &trans  &trans
 &trans                  &trans        &trans        &trans                            &trans             &trans  &trans  &trans  &trans                        &trans                  &trans          &trans           &trans  &trans
             >;
