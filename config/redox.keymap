@@ -96,20 +96,34 @@
                 <&kp G &kp I &kp F>;
         };
 
-        dongle_bootload_macro: bootload_macro {
+        mima: mima {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bootloader &kp N2 &kp N2 &kp N0 &kp N3 &kp N2 &kp N0 &kp RET>;
-            label = "BOOTLOAD_MACRO";
+            bindings = <&kp N2 &kp N2 &kp N0 &kp N3 &kp N2 &kp N0 &kp RET>;
+            label = "MIMA";
             wait-ms = <50>;
             tap-ms = <50>;
         };
 
-        mima: mima {
+        qqyoux: qqyoux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "MIMA";
+            bindings = <&kp N1 &kp N0 &kp N0 &kp N7 &kp N2 &kp N0 &kp N6 &kp N3 &kp N6 &kp N1 &kp AT &kp Q &kp Q &kp DOT &kp C &kp O &kp M>;
+            label = "QQYOUX";
+        };
+
+        gmail: gmail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp U &kp I &kp J &kp I &kp E &kp Z &kp H &kp A &kp N &kp G &kp N7 &kp N0 &kp N2 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "GMAIL";
+        };
+
+        suiji: mizi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Z) &kp X &kp J &kp B &kp S &kp J &kp B &kp X &kp J &kp J &kp N2 &kp N5>;
+            label = "MIZI";
         };
     };
 
@@ -214,11 +228,11 @@
         NAVI_MACROS {
             label = "Navi";
             bindings = <
-&dongle_bootload_macro  &trans        &trans        &trans            &trans          &trans                                             &trans                        &trans          &trans          &trans           &trans  &trans
-&trans                  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP    &to 1                   &to 3   &kp C_BRIGHTNESS_INC          &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans                  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &to 2                   &to 0   &kp C_BRIGHTNESS_DEC          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans                  &trans        &out OUT_TOG  &kp END           &kp PAGE_DOWN   &kp K_MUTE         &trans  &trans  &trans  &trans  &mima                         &trans          &trans          &trans           &trans  &trans
-&trans                  &trans        &trans        &trans                            &trans             &trans  &trans  &trans  &trans                        &trans                  &trans          &trans           &trans  &trans
+&trans  &trans        &trans        &trans            &trans          &trans                                             &trans                        &trans          &trans          &trans           &trans  &trans
+&trans  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP    &to 1                   &to 3   &kp C_BRIGHTNESS_INC          &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &to 2                   &to 0   &kp C_BRIGHTNESS_DEC          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans        &out OUT_TOG  &kp END           &kp PAGE_DOWN   &kp K_MUTE         &trans  &trans  &trans  &trans  &mima                         &qqyoux         &gmail          &suiji           &trans  &trans
+&trans  &trans        &trans        &trans                            &trans             &trans  &trans  &trans  &trans                        &trans                  &trans          &trans           &trans  &trans
             >;
         };
 
