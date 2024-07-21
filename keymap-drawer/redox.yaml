@@ -34,7 +34,7 @@ layers:
   - {t: F, s: '$$mdi:apple-keyboard-shift$$'}
   - G
   - {t: Mouse, h: toggle}
-  - {t: NAVI_MACROS, h: toggle}
+  - {t: NAVI, h: toggle}
   - H
   - {t: J, s: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, s: '$$mdi:apple-keyboard-control$$'}
@@ -63,8 +63,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:backspace$$', h: Modify}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:numeric$$'}
-  - {t: '$$mdi:keyboard-space$$', h: NAVI_MACROS}
-  - {t: '$$mdi:keyboard-space$$', h: NAVI_MACROS}
+  - {t: '$$mdi:keyboard-space$$', h: NAVI}
+  - {t: '$$mdi:keyboard-space$$', h: NAVI}
   - {t: '$$mdi:keyboard-return$$', h: Mouse}
   - {t: '$$mdi:backspace$$', h: Modify}
   - $$mdi:arrow-left-bold$$
@@ -105,7 +105,7 @@ layers:
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - Gui+ G
   - {t: Mouse, h: toggle}
-  - {t: NAVI_MACROS, h: toggle}
+  - {t: NAVI, h: toggle}
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-finder$$
@@ -176,7 +176,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Qwery, h: toggle}
-  - {t: NAVI_MACROS, h: toggle}
+  - {t: NAVI, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+ $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
@@ -247,7 +247,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: Mouse, h: toggle}
-  - {t: NAVI_MACROS, h: toggle}
+  - {t: NAVI, h: toggle}
   - '4'
   - {t: '5', s: '%'}
   - '6'
@@ -284,7 +284,7 @@ layers:
   - {t: '=', h: +, s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  NAVI_MACROS:
+  NAVI:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
