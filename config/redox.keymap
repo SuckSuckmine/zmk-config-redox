@@ -12,73 +12,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        left_bkt {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <15 16>;
-            timeout-ms = <50>;
-        };
-
-        right_bkt {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <21 22>;
-            timeout-ms = <50>;
-        };
-
-        left_par {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <29 30>;
-            timeout-ms = <50>;
-        };
-
-        right_par {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <35 36>;
-            timeout-ms = <50>;
-        };
-
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <43 44>;
-            timeout-ms = <50>;
-        };
-
-        right_brace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <51 52>;
-            timeout-ms = <50>;
-        };
-
-        bac {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <16 21>;
-            timeout-ms = <50>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <30 35>;
-            timeout-ms = <50>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <28 29>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <37 36>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         gif: gif {
@@ -176,7 +110,7 @@
 &kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T            &to 1                                                            &to 3                          &kp Y                    &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
 &kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G            &to 2                                                            &to 4                          &kp H                    &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
 &mt LEFT_SHIFT ENTER  &kp Z           &kp X           &kp C               &kp V             &kp B            &as LEFT_BRACE LEFT_BRACKET  &as PIPE BACKSLASH  &as PLUS EQUAL  &as RIGHT_BRACE RIGHT_BRACKET  &kp N                    &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
-&kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL                      &lt 1 BACKSPACE  &ltq 3 SPACE                 &ltq 4 TAB          &ltq 4 ENTER    &ltq 2 SPACE                           &lt 1 BACKSPACE                     &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
+&to 6                 &kp END         &kp HOME        &kp LEFT_CONTROL                      &lt 1 BACKSPACE  &ltq 3 SPACE                 &ltq 4 TAB          &ltq 4 ENTER    &ltq 2 SPACE                           &lt 1 BACKSPACE                     &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
             >;
 
             label = "Qwery";
@@ -244,6 +178,17 @@
 &trans  &trans  &trans        &trans  &trans  &trans  &trans                  &trans  &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &out OUT_TOG  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans        &trans          &trans  &trans  &trans  &trans  &trans          &trans                &trans        &trans        &trans        &bt BT_CLR_ALL
+            >;
+        };
+
+        layer_6 {
+            label = "Qwery";
+            bindings = <
+&as TILDE GRAVE       &kp N1          &kp N2          &kp N3              &kp N4            &kp N5                                                                                                           &kp N6                   &kp N7             &kp N8               &kp N9                   &kp N0               &kp BSPC
+&kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T            &to 1                                                            &to 3                          &kp Y                    &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
+&kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G            &to 2                                                            &to 4                          &kp H                    &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
+&mt LEFT_SHIFT ENTER  &kp Z           &kp X           &kp C               &kp V             &kp B            &as LEFT_BRACE LEFT_BRACKET  &as PIPE BACKSLASH  &as PLUS EQUAL  &as RIGHT_BRACE RIGHT_BRACKET  &kp N                    &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
+&kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL                      &lt 1 BACKSPACE  &ltq 3 SPACE                 &ltq 4 TAB          &ltq 4 ENTER    &ltq 2 SPACE                           &lt 1 BACKSPACE                     &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
             >;
         };
     };
