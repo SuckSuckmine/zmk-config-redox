@@ -57,7 +57,7 @@ layers:
   - {t: ., h: '>'}
   - {t: /, h: '?', s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: FPS, h: toggle}
   - END
   - HOME
   - $$mdi:apple-keyboard-control$$
@@ -65,12 +65,83 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Num}
   - {t: '$$mdi:keyboard-tab$$', h: NAVI}
   - {t: '$$mdi:keyboard-return$$', h: NAVI}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
+  - {t: '$$mdi:keyboard-space$$', h: Mouse}
   - {t: '$$mdi:backspace$$', h: Modify}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
+  FPS:
+  - $$mdi:keyboard-esc$$
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - '8'
+  - '9'
+  - F11
+  - F12
+  - {t: '0', s: )}
+  - {t: '=', s: +}
+  - {t: '`', s: '~'}
+  - {t: '-', s: _}
+  - Q
+  - W
+  - E
+  - R
+  - '6'
+  - {t: '7', s: '&'}
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: ']', s: '}'}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - {t: Mouse, h: toggle}
+  - {t: NAVI, h: toggle}
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: '[', s: '{'}
+  - {t: '''', s: '"'}
+  - $$mdi:keyboard-tab$$
+  - Z
+  - X
+  - C
+  - V
+  - $$mdi:backspace-reverse-outline$$
+  - HOME
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-finder$$
+  - B
+  - N
+  - M
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: ;, s: ':'}
+  - {t: /, s: '?'}
+  - LEFT WIN
+  - HOME
+  - $$mdi:apple-finder$$
+  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: FPS, h: toggle}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - {t: ',', s: <}
+  - .
   Modify:
   - F1
   - F2
@@ -207,7 +278,7 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -420,32 +491,30 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
 combos:
-- p: [0, 1]
-  k: $$mdi:keyboard-esc$$
-- p: [15, 16]
-  k: {t: '[', s: '{'}
-- p: [21, 22]
-  k: {t: ']', s: '}'}
-- p: [29, 30]
-  k: (
-- p: [35, 36]
-  k: )
-- p: [43, 44]
-  k: '{'
-- p: [51, 52]
-  k: '}'
-- p: [16, 21]
-  k: {t: \, s: '|'}
-- p: [30, 35]
-  k: '|'
-- p: [28, 29]
-  k: +
-- p: [37, 36]
-  k: {t: '=', s: +}
+- p: [49, 1]
+  k: F1
+- p: [49, 2]
+  k: F2
+- p: [49, 3]
+  k: F3
+- p: [4, 49]
+  k: F4
+- p: [49, 5]
+  k: F5
+- p: [18, 49]
+  k: F6
+- p: [49, 19]
+  k: F7
+- p: [49, 6]
+  k: F8
+- p: [49, 8]
+  k: F9
+- p: [49, 10]
+  k: F10
