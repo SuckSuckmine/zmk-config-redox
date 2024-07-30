@@ -104,8 +104,8 @@ layers:
   - S
   - D
   - F
-  - {t: Mouse, h: toggle}
-  - {t: NAVI, h: toggle}
+  - $$mdi:keyboard-tab$$
+  - {t: Modify, h: toggle}
   - G
   - H
   - J
@@ -137,7 +137,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:bluetooth-off$$
+  - {t: Modify, h: toggle}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - {t: ',', s: <}
@@ -497,24 +497,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
-combos:
-- p: [49, 1]
-  k: F1
-- p: [49, 2]
-  k: F2
-- p: [49, 3]
-  k: F3
-- p: [4, 49]
-  k: F4
-- p: [49, 5]
-  k: F5
-- p: [18, 49]
-  k: F6
-- p: [49, 19]
-  k: F7
-- p: [49, 6]
-  k: F8
-- p: [49, 8]
-  k: F9
-- p: [49, 10]
-  k: F10
