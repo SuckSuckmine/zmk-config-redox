@@ -12,7 +12,59 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        DSA {
+            bindings = <&kp F1>;
+            key-positions = <49 1>;
+        };
+
+        SSSS {
+            bindings = <&kp F2>;
+            key-positions = <49 2>;
+        };
+
+        SDASD {
+            bindings = <&kp F3>;
+            key-positions = <49 3>;
+        };
+
+        SAEDA {
+            bindings = <&kp F4>;
+            key-positions = <4 49>;
+        };
+
+        SDADADASD {
+            bindings = <&kp F5>;
+            key-positions = <49 5>;
+        };
+
+        DXX {
+            bindings = <&kp F6>;
+            key-positions = <18 49>;
+        };
+
+        RQSW {
+            bindings = <&kp F7>;
+            key-positions = <49 19>;
+        };
+
+        YJHM {
+            bindings = <&kp F8>;
+            key-positions = <49 6>;
+        };
+
+        HHNMHT {
+            bindings = <&kp F9>;
+            key-positions = <49 8>;
+        };
+
+        SDZX {
+            bindings = <&kp F10>;
+            key-positions = <49 10>;
+        };
+    };
 
     macros {
         gif: gif {
