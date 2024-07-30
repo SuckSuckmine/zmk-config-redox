@@ -137,7 +137,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&key_repeat'
+  - $$mdi:bluetooth-off$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - {t: ',', s: <}
