@@ -19,7 +19,7 @@ layers:
   - E
   - R
   - T
-  - {t: Modify, h: toggle}
+  - {t: Flash, h: toggle}
   - {t: Num, h: toggle}
   - Y
   - U
@@ -137,7 +137,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - BT CLR ALL
+  - '&key_repeat'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - {t: ',', s: <}
